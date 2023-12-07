@@ -1,0 +1,248 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{outlines, biblatex}
+
+\newcommand{\tmu}{Taipei Medical University }
+
+%\section{Suggested Titles}
+%Biomechanical Investigation of Temporomandibular Joint Injury in Hanging
+%Biomechanics of Hanging-Induced Temporomandibular Joint Dislocation
+%Ligature Forces and Unilateral TMJ Dislocation: Forensic Implications
+%Finite Element Models of TMJ Injury in Hanging Deaths
+\title{Ligature Forces and Unilateral TMJ Dislocation: Forensic Implications}  
+
+\author{Tex Li-Hsing Chi \\ \tmu}
+\date{\today}
+
+%\title{2024_research_proposal_forensic_PMCT_TMJ_dislocation}
+%\author{Li-Hsing Chi}
+%\date{December 2023}
+
+%Here is an updated draft with additional details on methods and two more institutional partners from Taiwan added:
+
+
+\begin{document}
+
+\maketitle 
+
+\begin{abstract}
+This project seeks to elucidate the biomechanics of unilateral temporomandibular joint (TMJ) dislocation observed in two forensic case reports of lethal hangings. A multi-phase approach utilizing computer simulation, animal models, and human cadaver heads with simulated hanging scenarios and force measurements will clarify anatomical and ligature factors contributing to TMJ dislocation.  
+\end{abstract}
+
+%\section{Introduction}
+%Here is a reorganized and expanded introduction section on TMJ anatomy, hanging deaths, the recent findings of TMJ dislocation, and the utility of finite element modeling, with integrated references:
+
+\section{Introduction}
+
+Hanging and ligature strangulation are among the most common violent deaths investigated by forensic pathologists [1]. Determining whether the manner of death was suicidal versus homicidal has major medicolegal implications, yet interpreting injuries to differentiate self versus third-party involvement can be challenging [2]. Comprehensively evaluating anatomical trauma is thus critical.  
+
+As forensic examiners determine the cause and manner of death based heavily on antemortem injury patterns [3], accurately delineating traumatic forces capable of inducing specific neck pathologies is essential for arriving at unbiased verdicts. While hyoid or thyroid cartilage fractures have been previously associated with compression from hanging or manual strangulation [4,5], acute temporomandibular joint (TMJ) dislocation has never before been reported.
+
+The TMJ permits mandibular articulation and oral functioning through a wide arc of motion [6]. Trauma, over-translation, or ligament laxity can cause joint dislocation where the mandibular condyle translates out of the mandibular fossa [7]. Recently in 2023, two confirmed self-hanging deaths were incidentally noted to have unilateral TMJ dislocations on post-mortem CT, presenting an unexplained phenomenon [8]. % https://link.springer.com/article/10.1007/s00414-023-03059-1#Sec1
+
+As the risk and lethality implications of joint dislocation across assault, accident, or self-harm scenarios depend profoundly on the causative force vectors and headpositions [9], reconstructing the precise biomechanical precipitants is paramount, but impossible through autopsy alone. Computational finite element modeling allows systematic quantification of location-specific stresses in complex anatomy like the TMJ exceeding failure thresholds before macroscopic evidence of injury [10].
+
+This project proposes developing simulations paired with animal and human cadaver ligature studies to elucidate anatomical factors, vectors and magnitude of forces producing hitherto unrecognized TMJ dislocation artifacts in neck compression fatalities. Findings will provide forensic medicine guidance in evaluating neck trauma for unbiased cause and manner of death conclusions. 
+
+%How unilateral TMJ dislocation bears directly on reconstructing risk of disability or lethality from hanging or strangulation events in clinical, assault, or accident scenarios, it is totally unkown.
+
+%Finite element analysis (FEA) uses computer simulation to model stress and strain in complex biomechanical systems like joints [3]. FEA can provide insight into injury mechanisms and tolerances that cannot be easily measured physically.
+This project will apply computational models (FEA) paired with animal and human cadaver studies to systematically characterize the anatomy, vectors, magnitudes, and locations of ligature forces producing unilateral TMJ dislocation. Findings will shape future forensic medical practice in investigating and interpreting neck trauma and assigning cause and manner of death.
+
+%%%%%
+% acute TMJ dislocation
+%Recently, two putative self-hanging cases were noted to have unilateral TMJ dislocations on post-mortem CT, presenting a newly recognized and unexplained phenomenon [4].
+%This project will apply FEA and experimental biomechanics across digital models, animal specimens, and human cadavers to investigate anatomical factors and quantify ligature properties leading to TMJ dislocation from hanging.
+%Recently observed but unexplained unilateral TMJ dislocations in two hanging cases prompts further biomechanical investigation to determine the mechanism of this injury. We will apply simulated hanging forces across digital models, animal specimens, and human cadavers to quantify anatomical configurations and ligature properties leading to TMJ dislocation.
+
+\section{Hypothesis}
+
+\subsection{One: closed mouth}
+Based on the recent observation of unilateral TMJ dislocation after death in hanging victims, we hypothesize that asymmetric ligature forces may distract the mandibular condyle on one side while the contralateral joint remains reduced, resulting in macroscopic evidence of acute one-sided dislocation. 
+We further predict that finite element simulations will demonstrate elevated stresses at the dislocated joint capsule insertions surpassing physiological limits prior to gross plastic deformation, aligning with a traumatic mechanism. 
+Cadaver traction studies are expected to validate unilateral TMJ disruption after repeated loading above critical input tension levels derived from computer models. 
+Elucidating orientation-specific vectors and magnitudes capable of inducing this phenomenon will clarify ambiguity in differentiating manner of death from neck injuries.
+%Please let me know if you would like me to modify the hypothesis or predictions in any way! I aimed to incorporate the major objectives around using computational modeling paired with experimental validation to quantify biomechanics precipitating observed unilateral TMJ injury.
+
+\subsection{Two: open mouth}
+Two alternative hypothesis focuse on the potential homicide or mid-hanging jaw tension mechanisms:
+
+\begin{outline}
+%\0 Based on the unexpected unilateral TMJ dislocations seen, we hypothesize two potential precipitating scenarios:
+
+\1 Self-inflicted hangings where the victim was captured mid-yawn or cry with the jaw widened, allowing the neck ligature to impart imbalance tensile stresses across the TMJ region.
+
+\1 Homicidal ligature attack where the assailant forcibly pulls the victim’s jaw open prior to hanging/strangulation, generating asymmetric joint forces sufficient for macroscopic unilateral dislocation.
+
+\end{outline}
+
+We predict that finite element models simulating an initial open-mouth position with widened mandibular angle will demonstrate elevated joint stresses and capsular ligament strains during simulated hanging traction compared to closed-mouth models, indicating a lowered mechanical threshold for unilateral injury.
+Applying caudal traction to animal mandibles is expected to similarly require less force to produce asymmetric TMJ disruption from an open versus closed bite. Quantifying location-specific tension limits leading to gross or radiographic evidence of one-sided joint disruption across parameters will clarify whether initial jaw orientation best explains corroborated post-mortem CT findings.
+Observed tension thresholds will also inform whether assertive assault needed to forcibly widen victim’s mouths prior to hanging, extreme reflexive yelling before loss of consciousness, or purely artifactual post-mortem tissue perturbations are most plausible.
+
+%
+\section{Specific Aims}
+\begin{outline}
+\1 Develop high-fidelity digital models of the head and neck anatomy to simulate hanging scenarios
+
+\1 Validate computer models through physical hanging experiments with animal (sheep) heads  
+
+\1 Extend force parameters found sufficient to produce TMJ dislocation in animal models to human cadaver heads
+
+\1 Elucidate the mechanism of unilateral TMJ dislocation induced by hanging ligature forces with measurement of joint properties
+
+\end{outline}
+
+\section{Materials and Methods}
+
+\subsection{IRB Review}
+The protocol for accessing human MRI/CT data and use of cadaver specimens will be submitted for ethics approval by the institutional review board at \tmu and collaborating partners. Only de-identified scans and donated cadavers will be analyzed.
+
+\subsection{Study Cohorts}
+Human radiological data will consist of MRI and $\mu$CT neck scans from 20 consenting subjects without evidence of prior TMJ injury.
+Cadavers will be 5 whole human bodies donated to research programs at participating medical examiner offices, with permission for use of head and neck tissues.
+
+\subsection{Animal Welfare}
+The protocol for animal work will be submitted to \tmu IACUC board for ethics approval, outlining humane handling of tissues and minimizing any animal distress.
+
+
+%\subsection{Computer Modeling}
+\subsection{Computer Simulations}
+Simulations will be run locally using a high performance workstation (Apple Mac Studio M2 Ultra with 192GB shared RAM), as well as on the Bulldozer HPC cluster. Open source finite element packages including FEBio and PolyFEM will be compiled for Apple Silicon architecture (aarch64).
+% https://febio.org/news/febio-studio-1-8-has-been-released/
+% or ?
+% Ansys Mechanical is a finite element analysis (FEA) software used to perform structural analysis using advanced solver options, including linear dynamics, nonlinearities, thermal analysis, materials, composites, hydrodynamic, explicit, and more.
+
+\begin{outline}
+    
+\1 Step 1: Obtain MRI and $\mu$CT scan data of human mandible, skull base, and neck anatomy
+
+\1 Step 2: Segment image datasets and extract bone and soft tissue contours
+
+\1 Step 3: Mesh geometries and import into finite element software
+
+\1 Step 4: Assign material properties to each tissue type from literature
+
+\1 Step 5: Simulate hanging by applying a pressure load to mandible and skull to represent ligature 
+
+\1 Step 6: Increment load magnitude and alter direction to determine unilateral joint dislocation points
+
+\end{outline}
+
+\subsection{Animal Testing}
+
+\begin{outline}
+
+\1 Step 1: Acquire fresh sheep heads and necks, suspend in frames using pulleys to guide ropes (n=20) \\
+
+\1 Step 2: Attach force sensors along the ligature path to quantify pressure \\
+
+\1 Step 3: Pull ropes incrementally until TMJ dislocation or tissue failure \\
+
+\1 Step 4: Dissect specimens and characterize trauma patterns across samples grossly and histologically\\
+
+\end{outline}
+
+%
+\subsection{Human Cadaver Specimens} 
+
+Same overall procedure as the animal testing phase but with 5 human cadaver heads following hanging simulations modeled from the animal validation experiments.
+
+%
+\subsection{Institutional Partners}
+
+\begin{outline}
+% 維多利亞法醫機構（Victorian Institute of Forensic Medicine）and Monash University
+%Authors and Affiliations
+%Forensic Services and Department of Forensic Medicine, Victorian Institute of Forensic Medicine and Monash University, 65 Kavanagh Street, Southbank, VIC, Australia
+%Joanna Glengarry & Chris O’Donnell
+%Department of Forensic Medicine, Monash University, 65 Kavanagh Street, Southbank, VIC, Australia
+%Megane Beaugeois & Lyndal Bugeja
+
+%Oral and Maxillofacial Surgery Department, Austin Health, 145 Studley Road, Heidelberg, VIC, Australia
+%Richard Huggins
+
+%Correspondence to Joanna Glengarry.
+
+\1 Victorian Institute of Forensic Medicine and Monash University's, Forensic Medicine
+\1 Taipei Medical University's Biomedical Informatics
+\1 National Taiwan University's Forensic Medicine
+%\1 National Yang-Ming University
+%- Chang Gung University, Taoyuan 
+%\1 China Medical University, Taichung
+% FEBio:
+\1 University of Utah’s Musculoskeletal Research Laboratories
+\1 University of Columbia’s Musculoskeletal Biomechanics Laboratory
+
+% The FEBio Software Suite is a collaborative effort between the University of Utah’s Musculoskeletal Research Laboratories and Columbia’s Musculoskeletal Biomechanics Laboratory
+
+\end{outline}
+
+%
+
+
+\section{Anticipated Results}
+
+This project is expected to systematically quantify the ligature properties and head positioning leading to unilateral TMJ dislocation through a series of computational models and biomechanical studies with animal and human cadaver tissues. 
+
+Specifically, we anticipate identifying threshold magnitudes and vectors of pressure forces transmitted by the hanging ligature to the mandible and skull capable of overcoming native joint resistance and precipitating acute TMJ dislocation. 
+
+Finite element models are projected to demonstrate elevated von Mises stresses concentrated at the mandibular condyle neck exceeding physiological limits prior to gross plastic deformation or fracture.
+
+Cadaveric experiments will validate digital findings, with macroscopic evidence of unilateral joint disruption emerging only after cyclic ligature loading above threshold levels derived from computer simulations. 
+
+Together, these quantified biomechanical parameters and location-specific stress profiles will delineate the precise mechanism of hitherto unexplained post-mortem TMJ findings. Consequent guidance for forensic pathologists will enhance future assessment of neck trauma from hanging or strangulation deaths, ruling out or confirming TMJ disruption as a meaningful indicator of antemortem events and manner of demise.
+
+This investigation also establishes a validated modeling pipeline to simulate additional violent head/neck trauma scenarios where external examination fails to fully reconstruct anatomic perturbations and injury timecourse.
+
+%
+\section{Expected Outcomes}
+
+This study will delineate the magnitude, vector, location, and mechanism of forces imparted by hanging ligatures to produce unilateral TMJ dislocation. Findings will guide forensic interpretation.
+
+%\section{Timeline and Budget}  
+
+%The project duration is expected to be 2 years. Supply and personnel costs are estimated at USD \$182,000.
+
+\section{Conclusion}
+This study will provide clarification on the etiology of TMJ dislocation increasingly recognized in deaths attributed to self-inflicted hanging, with forensic implications for interpreting neck trauma mechanisms. Our computational models and simulation parameters can also guide future injury biomechanics research into additional scenarios producing artifactual or non-artifactual TMJ dislocation.
+
+
+\clearpage
+
+
+%
+%Here are some suggested references to match the in-text citations:
+
+\begin{thebibliography}{10}
+\bibitem{1}
+Di Nunno, N., Costantinides, F., Vacca, M., \& Di Nunno, C. (2006). The emerging figure of hanging: An unusual case of self-inflicted asphyctic death simulating homicide. American journal of forensic medicine and pathology, 27(1), 9-11.
+\bibitem{2}
+
+Saukko, P., \& Knight, B. (2016). Knight's forensic pathology. CRC press.
+\bibitem{3}
+Tsokos M. (2004). Forensic pathology reviews, volume 1. Humana Press.
+\bibitem{4}
+Kanchan, T., Menezes, R. G., & Yoganarasimha, K. (2009). Analysis of neck structure and morphometry of hyoid bone: A prospective study. Journal of Forensic Sciences, 54(3), 702-705.
+\bibitem{5}
+Maxeiner, H., \& Bockholdt, B. (2003). Homicidal and suicidal ligature strangulation—a comparison of the post-mortem findings. Forensic science international, 137(1), 60-66.
+\bibitem{6}
+Okeson, J. P. (2013). Management of temporomandibular disorders and occlusion. Elsevier Health Sciences.
+\bibitem{7}
+Sidebottom, A. J. (2009). Management of temporomandibular joint dislocation. Oral and Maxillofacial Surgery Clinics, 21(1), 89-96.
+\bibitem{8}
+Glengarry, J., Beaugeois, M., Bugeja, L., Huggins, R., \& O’Donnell, C. (2023). Suspension‐associated dislocation of the jaw in hanging. International Journal of Legal Medicine, 137, 1489–1495.
+\bibitem{9}
+Stüssi E. (2007). Biomechanical analysis of fracture risk related to patterns of trauma in child abuse. Acta Paediatrica, 96(9), 1275-1281.
+\bibitem{10}
+Panagiotopoulou, O. (2009). Finite element analysis (FEA): applying an engineering method to functional morphology in anthropology and human biology. Annals of human biology, 36(5), 609-623.
+\end{thebibliography}
+
+% This includes some sample references on forensic pathology of hangings/strangulation, TMJ anatomy and trauma, the recent case report, and finite element analysis techniques that could be cited within the sections. 
+
+%I've included some relevant anatomy, biomechanics, and forensic pathology references on the TMJ and hyoid bone injuries related to neck trauma. Please let me know if you need any modifications or additional references!
+
+
+\end{document}
+
+Please let me know if you would like any other sections expanded or additional collaborators/methods incorporated into this project proposal draft. I'm happy to add further specifics as needed!
